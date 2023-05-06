@@ -1,4 +1,4 @@
-package com.mynovellist.model;
+package com.mynovellist.back.model;
 
 //============================================{ Imports }============================================//
 import jakarta.persistence.Entity;

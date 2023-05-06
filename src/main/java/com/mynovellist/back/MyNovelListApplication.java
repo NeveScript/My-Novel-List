@@ -1,4 +1,4 @@
-package com.mynovellist;
+package com.mynovellist.back;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
