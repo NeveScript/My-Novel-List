@@ -1,4 +1,4 @@
-package com.mynovellist.back.model;
+package com.mynovellist.back.insfrastructure.model;
 
 //============================================{ Imports }============================================//
 import jakarta.persistence.GeneratedValue;
