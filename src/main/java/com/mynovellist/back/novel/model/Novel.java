@@ -3,9 +3,12 @@ package com.mynovellist.back.novel.model;
 //================================{ END PACKAGE }================================//
 
 //=============================================={ IMPORTS }==============================================//
-import com.mynovellist.back.model.AbstractEntity;
+import com.mynovellist.back.insfrastructure.model.AbstractEntity;
 
+import com.mynovellist.back.novel.author.model.Author;
 import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -27,4 +30,8 @@ public class Novel extends AbstractEntity {
     private String synopsis;
     private float score;
     private long rank;
+
+    @ManyToOne
+    @JoinColumn(name="author_id")
+    private Author author;
 }
