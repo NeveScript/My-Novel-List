@@ -3,6 +3,7 @@ package com.mynovellist.back.insfrastructure.service;
 //================================{ IMPORTS }================================//
 import com.mynovellist.back.novel.model.Novel;
 
+import com.mynovellist.back.novel.service.INovelService;
 import com.mynovellist.back.novel.service.NovelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,7 @@ import java.util.List;
 public class Facade implements IFacade{
 
     @Autowired
-    NovelService novelService;
+    INovelService novelService;
 
     @Override
     public List<Novel> listAllNovels() {
