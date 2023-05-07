@@ -1,4 +1,11 @@
 /* Variables */
 :root {
-    --primary-color: #000B8899;
+    --primary-color: #0B8899;
+}
+
+
+/* FRAGMENTS */
+.header-menu-bg {
+    background-color: var(--primary-color);
+    color: white;
 }
